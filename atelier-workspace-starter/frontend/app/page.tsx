@@ -303,15 +303,9 @@ export default function Page() {
                     className="min-h-[300px] rounded-2xl border-zinc-200 leading-7"
                   />
                   <div className="flex flex-wrap gap-2">
-                    <Badge variant="secondary" className="rounded-full">
-                      # 自动识别主题
-                    </Badge>
-                    <Badge variant="secondary" className="rounded-full">
-                      # 情绪标签
-                    </Badge>
-                    <Badge variant="secondary" className="rounded-full">
-                      # 可转为作品说明
-                    </Badge>
+                    <Badge># 自动识别主题</Badge>
+                    <Badge># 情绪标签</Badge>
+                    <Badge># 可转为作品说明</Badge>
                   </div>
                   <div className="flex flex-wrap gap-3">
                     <Button className="rounded-2xl">保存草稿</Button>
@@ -359,13 +353,7 @@ export default function Page() {
                       </p>
                       <div className="mt-3 flex flex-wrap gap-2">
                         {item.tags.map((tag) => (
-                          <Badge
-                            key={tag}
-                            variant="secondary"
-                            className="rounded-full"
-                          >
-                            #{tag}
-                          </Badge>
+                          <Badge key={tag}>#{tag}</Badge>
                         ))}
                       </div>
                     </div>
@@ -397,12 +385,7 @@ export default function Page() {
                         <div className="mt-1 text-sm text-zinc-500">
                           {work.medium}
                         </div>
-                        <Badge
-                          className="mt-3 rounded-full"
-                          variant="secondary"
-                        >
-                          {work.series}
-                        </Badge>
+                        <Badge>{work.series}</Badge>
                       </CardContent>
                     </Card>
                   </motion.div>
@@ -448,9 +431,7 @@ export default function Page() {
                             {model.desc}
                           </p>
                         </div>
-                        <Badge variant="secondary" className="rounded-full">
-                          {model.status}
-                        </Badge>
+                        <Badge>{model.status}</Badge>
                       </div>
                     </div>
                   ))}

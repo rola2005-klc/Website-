@@ -345,6 +345,28 @@ export default function Page() {
               </div>
             </CardContent>
           </Card>
+          {[
+  { icon: LayoutGrid, label: "工作台" },
+  { icon: PenSquare, label: "随笔与草稿" },
+  { icon: ImageIcon, label: "画作档案" },
+  { icon: Boxes, label: "模型与实验" },
+  { icon: FolderOpen, label: "自动归类" },
+].map(({ icon: Icon, label }) => {
+  const Cmp = Icon as typeof LayoutGrid;
+  return (
+    <button
+      key={label}
+      className={
+        label === "工作台"
+          ? "flex w-full items-center gap-3 rounded-2xl bg-zinc-900 px-3 py-3 text-left text-white"
+          : "flex w-full items-center gap-3 rounded-2xl px-3 py-3 text-left text-zinc-600 transition hover:bg-zinc-100"
+      }
+    >
+      <Cmp className="h-4 w-4" />
+      <span className="text-sm font-medium">{label}</span>
+    </button>
+  );
+})}
 
           <Card>
             <CardHeader>

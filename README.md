@@ -1,5 +1,7 @@
 # Website- — Atelier Workspace Starter
 
+Live demo: https://rola2005-klc.github.io/Website-/
+
 A polished full-stack starter for a personal creative workspace: writing notes, art/archive views, and future AI-assisted classification. The project is structured as a Next.js frontend plus a FastAPI backend so it can grow from a visual prototype into a real creative archive.
 
 ## What it demonstrates
@@ -54,7 +56,7 @@ Open `http://localhost:8000/docs`.
 2. Replace the rule-based classifier with an LLM or a small local model
 3. Add real create/edit/archive pages for writing and art
 4. Connect the frontend to the FastAPI backend
-5. Deploy frontend on Vercel and backend on Render/Railway/Fly.io
+5. Deploy frontend on GitHub Pages/Vercel and backend on Render/Railway/Fly.io
 
 ## Portfolio note
 
